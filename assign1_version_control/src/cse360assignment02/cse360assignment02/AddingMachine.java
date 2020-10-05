@@ -1,14 +1,18 @@
 package cse360assignment02;
 
 public class AddingMachine {
+	
+	
   private int total;
+  private String transactions;
   
-  
+	
   /**
    * This is a constructor AddingMachine for this class. 
    */
   public AddingMachine () {
-    total = 0;  // not needed - included for clarity
+    total = 0; // not needed - included for clarity
+    transactions= " ";
   }
   
   
@@ -18,7 +22,7 @@ public class AddingMachine {
    */
   
   public int getTotal () {
-    return 0;
+    return total;
   }
   
   
@@ -28,6 +32,8 @@ public class AddingMachine {
    */
   
   public void add (int value) {
+	  total +=value;
+	  transactions = " + " + value;
   }
 
   /**
@@ -36,6 +42,8 @@ public class AddingMachine {
    */
   
   public void subtract (int value) {
+	  total -=value;
+	  transactions = " - " + value;
   }
   
   /**
@@ -43,7 +51,7 @@ public class AddingMachine {
    */
   
   public String toString () {
-    return "";
+    return transactions;
   }
 
   /**
@@ -51,5 +59,6 @@ public class AddingMachine {
    */
   
   public void clear() {
+	  transactions ="0";
   }
 }
