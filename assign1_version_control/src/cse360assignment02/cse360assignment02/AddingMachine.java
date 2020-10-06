@@ -13,7 +13,7 @@ public class AddingMachine {
    */
   public AddingMachine () {
     total = 0; // not needed - included for clarity
-    transactions= " ";
+    transactions= "0 ";
   }
   
   
@@ -61,6 +61,7 @@ public class AddingMachine {
    */
   
   public void clear() {
+	  total = 0;
 	  transactions ="0";
   }
 }
