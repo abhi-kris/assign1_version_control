@@ -5,6 +5,7 @@ public class AddingMachine {
 	
   private int total;
   private String transactions;
+
   
 	
   /**
@@ -23,6 +24,7 @@ public class AddingMachine {
   
   public int getTotal () {
     return total;
+    
   }
   
   
@@ -33,7 +35,7 @@ public class AddingMachine {
   
   public void add (int value) {
 	  total +=value;
-	  transactions = " + " + value;
+	  transactions += " + " + value;
   }
 
   /**
@@ -43,7 +45,7 @@ public class AddingMachine {
   
   public void subtract (int value) {
 	  total -=value;
-	  transactions = " - " + value;
+	  transactions += " - " + value;
   }
   
   /**
